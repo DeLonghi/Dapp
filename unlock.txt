@@ -1,0 +1,25 @@
+web3.eth.defaultAccount = web3.eth.accounts[0]
+personal.unlockAccount(web3.eth.defaultAccount)
+c = web3.eth.contract(abi).at("0x9dcda4ba46be6a61a285fbac02fe632b1e41003c")
+contractObj.method(args...)
+
+
+
+
+
+
+var events = c.allEvents(function(error, log) {console.log(err, log);});
+
+events.watch(function(error, event) { if (!error) console.log(event);});
+
+
+mysmartContract.getPastEvents('numberSaved', {
+    fromBlock: 0,
+    toBlock: 'latest'
+}, function(error, events){ console.log(events); })
+.then(function(events){
+    console.log(events) // same results as the optional callback above
+});
+
+
+simpleStorage = eth.contract(abi).new({from: eth.accounts[0], data: bytecode, gas: 500000})
