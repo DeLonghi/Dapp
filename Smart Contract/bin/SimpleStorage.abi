@@ -1,0 +1,1 @@
+abi = [{"anonymous":false,"inputs":[{"indexed":false,"internalType":"int256","name":"_value","type":"int256"}],"name":"data","type":"event"},{"inputs":[],"name":"get","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"int256","name":"x","type":"int256"}],"name":"set","outputs":[],"stateMutability":"nonpayable","type":"function"}]
